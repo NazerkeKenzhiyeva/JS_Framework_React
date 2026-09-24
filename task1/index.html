@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Runner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Task Runner</h1>
+        <p class="intro-text"> This is my JavaScript async practice project.</p>
+    </header>
+
+
+    <!-- Tasks -->
+    <section class="section-box">
+
+        <h2>Tasks</h2>
+
+        <div class="main-actions">
+            <button id="run-all-btn">Run All Tasks</button>
+            <button id="sequential-btn">Run Sequential</button>
+            <button id="concurrent-btn">Run Concurrent</button>
+        </div>
+
+        <p id="all-status"></p>
+
+        <div class="tasks">
+
+            <!-- Load Users -->
+            <div class="task-card">
+                <h2>Load Users</h2>
+
+                <p>Status:
+                    <span id="users-status">Ready</span>
+                </p>
+
+                <p>Runs:
+                    <span id="users-count">0</span>
+                </p>
+
+                <p>Loading time:
+                    <span id="users-time">0</span> ms
+                </p>
+
+                <button id="users-btn">Run</button>
+                <button id="users-reset">Reset</button>
+            </div>
+
+
+            <!-- Load Posts -->
+            <div class="task-card">
+                <h2>Load Posts</h2>
+
+                <p>Status:
+                    <span id="posts-status">Ready</span>
+                </p>
+
+                <p>Runs:
+                    <span id="posts-count">0</span>
+                </p>
+
+                <p>Loading time:
+                    <span id="posts-time">0</span> ms
+                </p>
+
+                <button id="posts-btn">Run</button>
+                <button id="posts-reset">Reset</button>
+            </div>
+
+
+            <!-- Load Comments -->
+            <div class="task-card">
+                <h2>Load Comments</h2>
+
+                <p>Status:
+                    <span id="comments-status">Ready</span>
+                </p>
+
+                <p>Runs:
+                    <span id="comments-count">0</span>
+                </p>
+
+                <p>Loading time:
+                    <span id="comments-time">0</span> ms
+                </p>
+
+                <button id="comments-btn">Run</button>
+                <button id="comments-reset">Reset</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- compar -->
+    <section class="section-box comparison">
+
+        <h2>Execution Comparison</h2>
+
+        <p>
+            Sequential time:
+            <span id="sequential-time">0</span> ms
+        </p>
+
+        <p>
+            Concurrent time:
+            <span id="concurrent-time">0</span> ms
+        </p>
+
+    </section>
+
+
+    <!-- event loop -->
+    <section class="section-box event-loop">
+
+        <h2>Event Loop Demo</h2>
+
+        <button id="event-loop-btn">
+            Run Event Loop Demo
+        </button>
+
+        <h3>Predicted Output</h3>
+
+        <pre>Start
+Async start
+End
+Promise 1
+Async after await
+Promise 2
+Timer 1
+Timer 2</pre>
+
+        <h3>Actual Output</h3>
+
+        <pre id="event-output"></pre>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
