@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import CostumeCard from "./components/CostumeCard";
 
+const getImagePath = (fileName) =>
+  `${import.meta.env.BASE_URL}images/${fileName}`;
+
 function App() {
   const [costumes, setCostumes] = useState([
   {
@@ -11,7 +14,7 @@ function App() {
     price: 24990,
     status: "Available",
     createdAt: 1,
-    image: "/images/dracula.jpg",
+    image: getImagePath("dracula.jpg"),
   },
   {
     id: 2,
@@ -20,7 +23,7 @@ function App() {
     price: 28990,
     status: "Available",
     createdAt: 2,
-    image: "/images/pinkie-pie.jpg",
+    image: getImagePath("pinkie-pie.jpg"),
   },
   {
     id: 3,
@@ -29,7 +32,7 @@ function App() {
     price: 31990,
     status: "Sold Out",
     createdAt: 3,
-    image: "/images/donald-mcdonalds.jpg",
+    image: getImagePath("donald-mcdonalds.jpg"),
   },
   {
     id: 4,
@@ -38,7 +41,7 @@ function App() {
     price: 32990,
     status: "Available",
     createdAt: 4,
-    image: "/images/deadpool.jpg",
+    image: getImagePath("deadpool.jpg"),
   },
   {
     id: 5,
@@ -47,7 +50,7 @@ function App() {
     price: 21990,
     status: "Available",
     createdAt: 5,
-    image: "/images/pirate.jpg",
+    image: getImagePath("pirate.jpg"),
   },
   {
     id: 6,
@@ -56,7 +59,7 @@ function App() {
     price: 27990,
     status: "Available",
     createdAt: 6,
-    image: "/images/wednesday.jpg",
+    image: getImagePath("wednesday.jpg"),
   },
 ]);
 
@@ -351,4 +354,4 @@ const resetCostumeCard = (id) => {
   );
 }
 
-export default App;   
+export default App;

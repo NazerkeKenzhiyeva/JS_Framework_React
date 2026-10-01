@@ -33,14 +33,6 @@ function CostumeCard({
   ♥ {likes}
 </button>
 
-      <button
-  className="reset-likes"
-  onClick={() => setLikes(0)}
-  title="Reset likes" 
->
-  ↻
-</button>
-
       <button onClick={() => onChangeStatus(costume.id)}>
         {costume.status === "Available"
           ? "Mark Sold Out"
@@ -60,4 +52,4 @@ function CostumeCard({
   );
 }
 
-export default CostumeCard; 
+export default CostumeCard;

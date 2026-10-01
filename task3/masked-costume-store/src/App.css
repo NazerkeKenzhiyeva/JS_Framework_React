@@ -394,11 +394,3 @@ article button:first-of-type:hover {
   border-color: #e23b2e;
   color: white;
 }
-
-.reset-likes {
-  width: 38px;
-  padding-left: 0;
-  padding-right: 0;
-
-  color: #888;
-}
