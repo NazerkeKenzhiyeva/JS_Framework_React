@@ -1,0 +1,28 @@
+export const initialDataSample = [
+  {
+    id: 1,
+    name: "Chuck 70 High — Graffiti",
+    description: "A Converse Chuck 70 High covered with layered marker tags, handwritten notes and small illustrations. Each pair is painted by hand.",
+    silhouette: "Converse Chuck 70 High",
+    palette: "Cream / Multicolor",
+    sizes: "36–45 EU",
+    price: 165,
+    artist: "streetALA studio",
+    status: "Available",
+    turnaround: "5–7 days",
+    image: "images/graffiti-high.jpg",
+  },
+  {
+    id: 2,
+    name: "Mexico 66 — Manga",
+    description: "An Onitsuka Tiger Mexico 66 with comic-inspired drawings, turquoise details and bright orange stripes on a clean white base.",
+    silhouette: "Onitsuka Tiger Mexico 66",
+    palette: "White / Orange / Cyan",
+    sizes: "37–44 EU",
+    price: 190,
+    artist: "streetALA studio",
+    status: "Sold out",
+    turnaround: "10–14 days",
+    image: "images/manga-runner.jpg",
+  },
+];
