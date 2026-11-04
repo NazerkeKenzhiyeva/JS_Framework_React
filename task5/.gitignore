@@ -3,3 +3,5 @@ dist/
 .openai/
 *.log
 .DS_Store
+
+.vercel
