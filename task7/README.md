@@ -2,6 +2,11 @@
 
 Task 7 converts the complete Task 6 React application into an installable, offline-capable PWA. Authentication, protected routes, URL filters, pagination, dashboard statistics, TanStack Query caching and sneaker CRUD remain available.
 
+## Links
+
+- Live application: https://streetala-task7.vercel.app
+- GitHub repository: https://github.com/NazerkeKenzhiyeva/JS_Framework_React/tree/main/task7
+
 ## PWA features
 
 - valid `/manifest.json` linked from `index.html`
